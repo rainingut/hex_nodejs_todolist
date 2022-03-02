@@ -104,6 +104,6 @@ const requestListener = (req, res) => {
     res.end();
   }
 }
-
 const server = http.createServer(requestListener);
+// process.env.PORT－－HEROKU的環境變數
 server.listen(process.env.PORT || 3005);
